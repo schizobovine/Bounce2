@@ -48,8 +48,13 @@ class Bounce
     // Attach to a pin (and also sets initial state)
     void attach(int pin);
     
-    // Attach to a pin (and also sets initial state) and sets pin to mode (INPUT/INPUT_PULLUP/OUTPUT)
+    // Attach to a pin (and also sets initial state) and sets pin to mode
+    // (INPUT/INPUT_PULLUP/OUTPUT)
     void attach(int pin, int mode);
+    
+    // Attach to a pin (and also sets initial state), sets pin to mode
+    // (INPUT/INPUT_PULLUP/OUTPUT), and sets interval for debouncing
+    void attach(int pin, int mode, uint16_t interval_millis);
 
     // Sets the debounce interval
     void interval(uint16_t interval_millis);
