@@ -37,6 +37,10 @@
 #ifndef Bounce2_h
 #define Bounce2_h
 
+#ifndef _BV
+#define _BV(xplatform_code_is_hard) ((1) << (xplatform_code_is_hard))
+#endif
+
 #include <inttypes.h>
 
 class Bounce
